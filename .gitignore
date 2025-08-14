@@ -1,0 +1,29 @@
+# Arquivos de estado do Terraform
+*.tfstate
+*.tfstate.*
+
+# Logs e backups gerados pelo Terraform
+crash.log
+crash.*.log
+*.backup
+*.tfplan
+
+# Arquivos locais de configuração do Terraform
+.terraform/
+.terraform.lock.hcl
+
+# Credenciais e variáveis sensíveis
+*.tfvars.json
+*.env
+secrets.auto.tfvars
+
+# Arquivos temporários do editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Mac/Linux/Windows system files
+.DS_Store
+Thumbs.db
