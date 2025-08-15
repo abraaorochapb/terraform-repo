@@ -3,13 +3,6 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
-#providers
-provider "aws" {
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  region     = var.region
-}
-
 #resources
 resource "aws_vpc" "vpc_terraform" {
   cidr_block           = var.vpc_cidr_block

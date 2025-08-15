@@ -1,14 +1,8 @@
-#provider variables
-variable "aws_access_key" {
-  description = "AWS Access Key"
+# profile aws
+variable "aws_profile" {
+  description = "AWS profile to use for authentication"
   type        = string
-  sensitive   = true
-}
-
-variable "aws_secret_key" {
-  description = "AWS Secret Key"
-  type        = string
-  sensitive   = true
+  default     = "default"
 }
 
 variable "region" {

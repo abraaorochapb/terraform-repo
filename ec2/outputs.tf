@@ -1,3 +1,4 @@
-output "aws_instance_public_ip" {
-  value = aws_instance.ec2_terraform.public_ip
+output "aws_alb_public_ip" {
+  value = "http://${aws_lb.terraform-alb.dns_name}"
+  description = "The public IP address of the AWS Application Load Balancer"
 }
